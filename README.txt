@@ -1,0 +1,1 @@
+A jQuery Slider that uses the CSS3 animations using the animate.css from http://daneden.me/animate/.
