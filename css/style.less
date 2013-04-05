@@ -1,0 +1,34 @@
+// Abhijeet Bajracharya
+// https://twitter.com/_Abizit_
+// abhijeetbajracharya@gmail.com
+
+// Global Reset
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+figure{margin: 0; padding: 0;}
+
+// GLOBAL VARIABLES
+
+@white:#ffffff;
+@black:#000000;
+@maintextcolor:#666666;
+.fontSize (@size: 16px) {font-size: @size;}
+.bold{font-weight:bold}
+.roundedCorners (@radius: 5px) {border-radius: @radius;}
+.transition (@range: all, @time: 0.3s, @ease: ease-in-out) {-moz-transition: @range @time @ease;-webkit-transition: @range @time @ease;-o-transition: @range @time @ease;transition: @range @time @ease;}
+.border (@bdclr: @grey, @bdwidth: 1px, @bdtype: solid) {border:@bdclr @bdwidth @bdtype;}
+a{text-decoration: none; .transition;
+	&:hover{text-decoration: none;}
+}
+
+// GLOBAL STYLES
+body{background:@white;.fontSize;display: block; font-weight: 300;font-family: 'proxima_nova_rgregular';}
+
+.ab-wrapper{ position: relative; overflow: hidden; height: 200px;
+			.slide{width: 100%; background: @black;color: @white; height: 200px; text-align: center; line-height: 200px;}
+	
+	}//ab-wrapper
+
+
+
+
+
