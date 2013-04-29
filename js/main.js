@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $('.slider').abSlider({
     pause : 4000,
-    effect :'rollIn'
+    effect :'fadeInDown'
 
   });
 
