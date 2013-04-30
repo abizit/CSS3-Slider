@@ -51,7 +51,15 @@ $(document).ready(function(){
             selector.find('.slide-item').eq(0).addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
             $(pager).eq(0).addClass("active");
 
+            //Slide Loop
             loop();
+
+            // Page Control 
+            pagerControl();
+
+            //Previous Next Button
+            prevNextControl();  
+              
            
     });
 
@@ -72,6 +80,58 @@ function loop(){
             }, variables.pause);
 }//loop
 
+function pagerControl(){
+    pager.click(function(){
+                  var id =$(this).attr('href');
+                  selector.find('.slide-item').removeClass(variables.effect).removeClass('current-slide animated').css({'display' : 'none'});
+                  $(id).addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
+                  $(pager).removeClass('active');
+                  $(this).addClass('active');
+                   clearInterval(infiniteLoop);
+                  return false;
+                  });
+            
+
+}//pagerControl
+
+
+function prevNextControl(){
+
+
+      $('.slide-next').click(function(){
+        var firstSlide = $('.slide-item:first');
+       if($('.slide-item:last').hasClass('current-slide')){
+          $('.slide-item:last').fadeOut().removeClass('current-slide');
+            firstSlide.fadeIn().addClass('current-slide');
+
+        } else {
+
+          $('.current-slide').removeClass(variables.effect).removeClass('current-slide animated').css({'display' : 'none'}).next().addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
+        }
+        
+          clearInterval(infiniteLoop);
+          return false;
+      });
+
+
+      $('.slide-prev').click(function(){
+        var lastSlide = $('.slide-item:last');
+        
+          if($('.slide-item:first').hasClass('current-slide')){
+            $('.slide-item:first').fadeOut().removeClass('current-slide');
+            lastSlide.fadeIn().addClass('current-slide');
+
+          } else {
+
+          $('.current-slide').removeClass(variables.effect).removeClass('current-slide animated').css({'display' : 'none'}).prev().addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
+        }
+          
+          clearInterval(infiniteLoop);
+          return false;
+        
+        });
+
+}//prevNextControl
   
 
 
