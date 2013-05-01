@@ -101,8 +101,8 @@ function prevNextControl(){
       $('.slide-next').click(function(){
         var firstSlide = $('.slide-item:first');
        if($('.slide-item:last').hasClass('current-slide')){
-          $('.slide-item:last').fadeOut().removeClass('current-slide');
-            firstSlide.fadeIn().addClass('current-slide');
+          $('.slide-item:last').removeClass(variables.effect).removeClass('current-slide animated').css({'display' : 'none'});
+            firstSlide.addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
 
         } else {
 
@@ -118,8 +118,8 @@ function prevNextControl(){
         var lastSlide = $('.slide-item:last');
         
           if($('.slide-item:first').hasClass('current-slide')){
-            $('.slide-item:first').fadeOut().removeClass('current-slide');
-            lastSlide.fadeIn().addClass('current-slide');
+            $('.slide-item:first').removeClass(variables.effect).removeClass('current-slide animated').css({'display' : 'none'});
+            lastSlide.addClass('current-slide animated').addClass(variables.effect).css({'display' : 'block'});
 
           } else {
 

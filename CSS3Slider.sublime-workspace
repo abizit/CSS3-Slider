@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
 				"ba",
-				"background-position"
+				"background"
+			],
+			[
+				"te",
+				"text-indent"
 			],
 			[
 				"cl",
@@ -36,20 +48,12 @@
 				"padding"
 			],
 			[
-				"ma",
-				"margin-bottom"
-			],
-			[
 				"scr",
 				"scrpt"
 			],
 			[
 				"sc",
 				"scrpt"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"close",
@@ -214,10 +218,6 @@
 			[
 				"fun",
 				"function"
-			],
-			[
-				"left",
-				"leftPos"
 			],
 			[
 				"w",
@@ -560,11 +560,14 @@
 	},
 	"file_history":
 	[
-		"/Library/WebServer/www/GIT/CSS3-Slider/index.html",
 		"/Library/WebServer/www/GIT/CSS3-Slider/js/main.js",
 		"/Library/WebServer/www/GIT/CSS3-Slider/css/style.less",
-		"/Volumes/www-1/idiplus/wp-content/themes/AccessPress/js/page_scripts.js",
+		"/Library/WebServer/www/frontieers/researchfrontieers/wp-content/themes/AccessPress/js/main.js",
+		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/header.php",
+		"/Users/abhijeetbajracharya/Documents/Wordpress Materials/Word Press plugins and themes/My Theme/AccessPress/style.css",
 		"/Library/WebServer/www/GIT/CSS3-Slider/README.md",
+		"/Library/WebServer/www/GIT/CSS3-Slider/index.html",
+		"/Volumes/www-1/idiplus/wp-content/themes/AccessPress/js/page_scripts.js",
 		"/Library/WebServer/www/GIT/CSS3-Slider/README.txt",
 		"/Library/WebServer/www/edward/js/main.js",
 		"/Library/WebServer/www/edward/css/style.less",
@@ -667,7 +670,6 @@
 		"/Library/WebServer/www/signdirectory/css/main.css",
 		"/Library/WebServer/www/signdirectory/protected/extensions/bootstrap/assets/css/bootstrap.min.css",
 		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/landingheader.php",
-		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/header.php",
 		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/headelements.php",
 		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/style.less",
 		"/private/var/folders/03/915bpdk158z4h0qwsssbxxqc0000gn/T/fz3temp-1/slider.css",
@@ -685,9 +687,7 @@
 		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/template/catalog/product/list.phtml",
 		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/template/catalog/product/view/addtocart.phtml",
 		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/template/catalog/product/view.phtml",
-		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/layout/local.xml",
-		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/layout/page.xml",
-		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/template/page/homepage.phtml"
+		"/Library/WebServer/www/bromley/app/design/frontend/default/bromley/layout/local.xml"
 	],
 	"find":
 	{
@@ -706,6 +706,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"            \n",
 			"loading",
 			"postL",
 			"posL",
