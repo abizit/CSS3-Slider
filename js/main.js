@@ -2,10 +2,11 @@ $(document).ready(function(){
 
   $('.slider').abSlider({
     pause : 4000,
-    effect :'bounceInLeft'
+    effect :'flipInY'
 
   });
 
+  
 });
 
 (function($) {
